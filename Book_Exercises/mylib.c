@@ -1,18 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "mylib.h"
-//For some reason getchar() is able to "trash" the enter key input.
-//If getchar() is no present on inputInt() and inputChar() the last input will always be an int 10.
-//int 10 or New Line char. Funny that is does not get inputed in the current function but the following.
-//So! Without getchar(), the current function runs and there is an int 10 as a ghost waiting to get picked up
-//on the next input function.
-/*
-The Enter Key issue:
-	In order to run commands/functions the enter key is required. If we prompt the user to type something
-e.g "Type your name", the user will type his name, let's say Bill, and press enter. The program will read all 4 letters
-AND also the enter key which was used to execute the program. So you have 5 chars on a 4 char name. Therefore, the enter
-key must be "trashed" in order to get programs to run as expected.
-*/
+
+//ASCII 10(Enter) will always be the last input recieved
 
 int inputInt() {
 	int x = 0;
@@ -73,11 +63,11 @@ void exerciseRepeater() {
 }
 
 A place holder for now: will mark with the a comment
-COPY>>
+			COPY>>
 int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
 	for (x = 0; x != -1;) {
 		//code here
 		x = restart();
 	}
-<<COPY
+			<<COPY
 */

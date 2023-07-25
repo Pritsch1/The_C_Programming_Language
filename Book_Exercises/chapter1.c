@@ -1092,13 +1092,64 @@ void exercise1_16() {
 	
 }
 
-//reviece all inputs till enter is hit
-//Any point where EOF is reached STOP
-//count input
-//discard < 80
-//discard extra > MAXLINE
-//store biggest input
-//stop and redo if enter is hit
+void exercise1_17() {
+#define MAXCHARS 80
+	/*int c, i, count_single_input;
+	int *temporary_array_size = ;
+	int temporary_array[temporary_array_size], stupid_array[temporary_array_size];
+	c = i = count_single_input = temporary_array[temporary_array_size] = stupid_array[temporary_array_size] = 0;
+
+	while ((c = getchar()) != EOF) {
+		if (c != 10) {
+			count_single_input++;
+			temporary_array_size = count_single_input;
+			temporary_array[temporary_array_size - 1];
+		}
+		else {
+			if (count_single_input > 80) {
+				for (i = 0; i < temporary_array_size; i++) { stupid_array[i] = temporary_array[i]; }
+			}
+			count_single_input = 0;
+			temporary_array_size = 1;
+		}
+	}*/
+#undef MAXCHARS
+}
+
+void exercise1_18() {
+
+}
+
+void exercise1_19() {
+
+}
+#undef MAXLINE
+//Chapter 1.9 Exercises-----------------------------------------------//
+
+
+
+
+/*!!!!!!!!!!
+
+REVIEW CHAPTER 1.6!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+*/
+
+
+/*DO NOT DELETE!
+int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
+for (x = 0; x != -1;) {
+	//code here
+	x = restart();
+}
+*/
+
+
+
+
+/*
+I have no idea what I did. I'm saving this older code just because.
+
 void exercise1_17() {
 	int i, k, size_controll;
 	i = k = size_controll = 0;
@@ -1129,32 +1180,5 @@ void exercise1_17() {
 	for (i = 0; i < size_controll; i++) {
 		printf("%s", line);
 	}
-}
-
-void exercise1_18() {
-
-}
-
-void exercise1_19() {
-
-}
-#undef MAXLINE
-//Chapter 1.9 Exercises-----------------------------------------------//
-
-
-
-
-/*!!!!!!!!!!
-
-REVIEW CHAPTER 1.6!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-*/
-
-
-/*DO NOT DELETE!
-int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
-for (x = 0; x != -1;) {
-	//code here
-	x = restart();
 }
 */
