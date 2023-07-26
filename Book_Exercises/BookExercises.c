@@ -47,7 +47,7 @@ void start() {
 			break;
 		}
 	}
-}//Main index------------------------------------------------//
+}//Main index------------------------------------------------\\
 
 //Chapter Selection-----------------------------------------------------//
 void chapterSelectionText() {
@@ -118,7 +118,7 @@ void chapterSelection() {
 			break;
 		}
 	}	
-}//Chapter Selection-----------------------------------------------------//
+}//Chapter Selection-----------------------------------------------------\\
 
 //Projects Selection----------------------------------------------------//
 void projectsSelectionText() {
@@ -148,4 +148,4 @@ void projectsSelection() {
 			break;
 		}
 	}	
-}//Projects Selection----------------------------------------------------//
+}//Projects Selection----------------------------------------------------\\

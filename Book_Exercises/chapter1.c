@@ -752,7 +752,14 @@ void exercise1_13() {
 	}
 }
 
+/*
+The answer is to extend the number precision to 3 extradigits and only show 2 extra digits. Let me clarify
+for the input "asdca"+"LF" we get a total of 6 chars
+4 x 16.67% <- this was not rounded from 16.6666666667
+1 X 33.33% <- This was rounded DOWN from 33.3333333334
 
+Thus you need to keep thinking when your brain cells get a good rest about fixing this rounding problem. I'm am now typinf without looking atthe keuboard.
+*/
 void exercise1_14() {
 	int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
 	for (x = 0; x != -1;) {
@@ -763,7 +770,8 @@ void exercise1_14() {
 		float ASCII_FREQUENCY_SORTED[RANGE] = { 0 };
 		int c, i, j, y, z;
 		float ASCII_total_sum, current_char_frequency;
-		c = i = j = y = z = ASCII_total_sum = current_char_frequency = 0;
+		c = i = j = y = z = 0;
+		ASCII_total_sum = current_char_frequency = 0;
 
 		//parameters for printing 
 		int a, b, d, e;
@@ -868,6 +876,7 @@ void exercise1_14() {
 				ASCII_COPY[i] = ASCII[i];
 			}
 			//!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~  SPACE/LF/TAB
+			//!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~0000
 			if (y == 89 || y == 121) {
 				//Calculate ASCII_total_sum
 				for (i = 0; i < RANGE; i++) {
@@ -1091,7 +1100,12 @@ void chapter1_9() {
 void exercise1_16() {
 	
 }
+/*
 
+GOT TO LINE 755
+
+
+*/
 void exercise1_17() {
 #define MAXCHARS 80
 	/*int c, i, count_single_input;
