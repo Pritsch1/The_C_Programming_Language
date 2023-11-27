@@ -13,6 +13,10 @@ void chapter1_2();
 void example1C1_2();
 void example2C1_2();
 
+void chapter1_6Text();
+void chapter1_6();
+void example1C1_6();
+
 void chapter1_9Text();
 void chapter1_9();
 int getline(char s[], int lim);

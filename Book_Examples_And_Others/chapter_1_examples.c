@@ -46,7 +46,7 @@ void chapter1() {
 			//chapter1_5();
 			break;
 		case 6:
-			//chapter1_6();
+			chapter1_6();
 			break;
 		case 7:
 			//chapter1_7();
@@ -203,6 +203,64 @@ void example2C1_2() {
 	printf("press enter to continue...");
 	getchar();
 }//Chapter 1.2 Exercises-----------------------------------------------//
+
+//Chapter 1.6 Exercises-----------------------------------------------//
+void chapter1_6Text() {
+	printf("  0 - Go Back\n\n");
+	printf("  1 - Example 1\n\n");
+	printf("  2 - Quit Program\n\n");
+}
+
+void chapter1_6() {
+	int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
+	for (x = 0; x != -1;) {
+		chapter1_6Text();
+		x = inputInt();
+		switch (x)
+		{
+		case 0:
+			x = -1;
+			break;
+		case 1:
+			trim(0);
+			printf("Example 1\n\n");
+			example1C1_6();
+			trim(1);
+			break;
+		case 2:
+			quit();
+			break;
+		default:
+			error404();
+			break;
+		}
+	}
+
+}
+/* count digits, white spaces, others */
+void example1C1_6() {
+	int c, i, nwhite, nother;
+	c = i = nwhite = nother = 0;
+	int ndigit[10] = { 0 };
+
+	while ((c = getchar()) != EOF) {
+		if (c >= '0' && c <= '9') {
+			++ndigit[c - '0'];
+		}
+		else if (c == ' ' || c == '\n' || c == '\t') {
+			++nwhite;
+		}
+		else {
+			++nother;
+		}
+	}
+
+	printf("digits =");
+	for (i = 0; i < 10; i++) {
+		printf(" %d", ndigit[i]);
+	}
+	printf(", white space = %d, other = %d\n", nwhite, nother);
+}//Chapter 1.6 Exercises-----------------------------------------------//
 
 /*-------
 

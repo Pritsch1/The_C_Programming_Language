@@ -753,12 +753,9 @@ void exercise1_13() {
 }
 
 /*
-The answer is to extend the number precision to 3 extradigits and only show 2 extra digits. Let me clarify
-for the input "asdca"+"LF" we get a total of 6 chars
-4 x 16.67% <- this was not rounded from 16.6666666667
-1 X 33.33% <- This was rounded DOWN from 33.3333333334
+exercise1_14()
 
-Thus you need to keep thinking when your brain cells get a good rest about fixing this rounding problem. I'm am now typinf without looking atthe keuboard.
+Periodic sequence makes the percentages additions uncorrect. 
 */
 void exercise1_14() {
 	int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
@@ -1096,38 +1093,52 @@ void chapter1_9() {
 
 }
 
-#define MAXLINE 2000
-void exercise1_16() {
-	
+#define MAXLINE 1000	/* maximum input line size */
+/* getline: read a line into s, return length */
+int getline(char s[], int lim) {
+	int c, i;
+
+	for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+		s[i] = c;
+		if (c == '\n') {
+			s[i] = c;
+			++i;
+		}
+	}
+	s[i] = '\0';
+	return i;
 }
-/*
+/* copy: copy 'from' into 'to'; assume to is big enough */
+void copy(char to[], char from[]) {
+	int i;
 
-GOT TO LINE 755
+	i = 0;
+	while ((to[i] = from[i]) != '\0') {
+		++i;
+	}
+}
 
+/* print longest input line */ //
+void exercise1_16() {
+	int len;			/* current line length */
+	int max;			/* maximum length seen so far */
+	char line[MAXLINE];			/* current input line */
+	char longest[MAXLINE];		/* longest line saved here*/
 
-*/
+	max = 0;
+	while ((len = getline(line, MAXLINE)) > 0) {
+		if (len > max) {
+			max = len;
+			copy(longest, line);
+		}
+	}
+	if (max > 0) { /* there was a line */
+		printf("%s", longest);
+	}
+}
+#undef MAXLINE
+
 void exercise1_17() {
-#define MAXCHARS 80
-	/*int c, i, count_single_input;
-	int *temporary_array_size = ;
-	int temporary_array[temporary_array_size], stupid_array[temporary_array_size];
-	c = i = count_single_input = temporary_array[temporary_array_size] = stupid_array[temporary_array_size] = 0;
-
-	while ((c = getchar()) != EOF) {
-		if (c != 10) {
-			count_single_input++;
-			temporary_array_size = count_single_input;
-			temporary_array[temporary_array_size - 1];
-		}
-		else {
-			if (count_single_input > 80) {
-				for (i = 0; i < temporary_array_size; i++) { stupid_array[i] = temporary_array[i]; }
-			}
-			count_single_input = 0;
-			temporary_array_size = 1;
-		}
-	}*/
-#undef MAXCHARS
 }
 
 void exercise1_18() {
@@ -1137,62 +1148,12 @@ void exercise1_18() {
 void exercise1_19() {
 
 }
-#undef MAXLINE
 //Chapter 1.9 Exercises-----------------------------------------------//
-
-
-
-
-/*!!!!!!!!!!
-
-REVIEW CHAPTER 1.6!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-*/
-
 
 /*DO NOT DELETE!
 int x;//exerciseRepeater() PLACE&HOLDER(mylib.c)
 for (x = 0; x != -1;) {
 	//code here
 	x = restart();
-}
-*/
-
-
-
-
-/*
-I have no idea what I did. I'm saving this older code just because.
-
-void exercise1_17() {
-	int i, k, size_controll;
-	i = k = size_controll = 0;
-	char c = '!';
-	char line[MAXLINE];
-
-	while (c != EOF) {
-		i = 0;
-		while (c != '\n' || c != EOF || i != (MAXLINE - 1)) {
-			c = getchar();
-			line[i] = c;
-			if (c == '\n' && i < (MAXLINE - 1)) {
-				line[i + 1] = '\0';
-			}
-			if (i == (MAXLINE - 1)) {
-				line[i] = '\0';
-			}
-			i++;
-		}
-		size_controll = i;
-		if (i >= size_controll && i > 80) {
-			// :)
-		}
-		else {
-			for (k = 0; k < MAXLINE; k++) { line[k] = 0; }
-		}
-	}
-	for (i = 0; i < size_controll; i++) {
-		printf("%s", line);
-	}
 }
 */

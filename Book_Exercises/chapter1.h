@@ -38,6 +38,8 @@ void exercise1_15();
 
 void chapter1_9Text();
 void chapter1_9();
+int getline(char s[], int lim);
+void copy(char to[], char from[]);
 void exercise1_16();
 void exercise1_17();
 void exercise1_18();
