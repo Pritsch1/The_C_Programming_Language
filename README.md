@@ -31,8 +31,6 @@ This one did not bug the code as much.
 
 ![plot](./table.png)
 
-### `.exe files`
-
 ### Exercise 1-14: Write a program to print a histogram of the frequencies of diferent characters in its input.
 
 ### Text Input (same)
