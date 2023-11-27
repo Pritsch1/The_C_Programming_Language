@@ -13,7 +13,7 @@ This one did not bug the code as much.
 
 ## Or just have a peek
 
-### `Exercise 1-13: Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.`
+### Exercise 1-13: Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.
 
 ### Text Input
 
@@ -30,6 +30,20 @@ This one did not bug the code as much.
 ### Table
 
 ![plot](./table.png)
+
+### `.exe files`
+
+### Exercise 1-14: Write a program to print a histogram of the frequencies of diferent characters in its input.
+
+### Text Input (same)
+
+### Options
+
+![plot](./select.png)
+
+### Histogram
+
+![plot](./Histogram2.png)
 
 ### `.exe files`
 
