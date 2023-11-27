@@ -13,20 +13,23 @@ This one did not bug the code as much.
 
 ## Or just have a peek
 
-### `Exercise 1-13: Write a program to print a histogram of the lengths of words in its input. It is easy
-to draw the histogram with the bars horizontal; a vertical orientation is more challenging.`
+### `Exercise 1-13: Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.`
 
-Text Input
+### Text Input
+
 ![plot](./txt_input.png)
 
-Horizontal
+### Horizontal
+
 ![plot](./horz.png)
 
-Vertical
+### Vertical
+
 ![plot](./vert.png)
 
-Table
-![plot](./talbe.png)
+### Table
+
+![plot](./table.png)
 
 ### `.exe files`
 
